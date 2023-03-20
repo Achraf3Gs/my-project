@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Browser Object Model</title>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <h1 id='gros_titre'>Le BOM</h1>
+    <p></p>
+    <script>
+        var langue = navigator.language;
+        var navigateur = navigateur.appName;
+        var version = navigator.appVersion;
+        var moteur = navigator.product;
+        var cookieA = navigator.cookieEnabled;
+
+        var para = document.querySelector('p');
+        para.innerHTML =
+            'Language utilisé:' + langue +
+            '<br>Nom du navigateur :' + navigateur +
+            '<br>Version:' + version +
+            '<br>Moteur:' + moteur +
+            '<br>Cookie?:' + cookieA;
+    </script>
+</body>
+
+</html>
